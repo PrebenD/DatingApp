@@ -1,4 +1,4 @@
-namespace DatinApp.API.Controllers.Models
+namespace DatingApp.API.Controllers.Models
 {
     public class Values
     {
