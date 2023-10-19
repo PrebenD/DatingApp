@@ -20,13 +20,20 @@ export class NavComponent implements OnInit {
 
   login() {
     this.accountService.login(this.model).subscribe({
-      next: _ => this.router.navigateByUrl('/members')
+      next: _ => {
+        this.router.navigateByUrl('/members');
+        this.toastr.success('Login successfully');
+      }
     })
   }
 
   logout() { 
-    this.accountService.logout();
     this.router.navigateByUrl('/');
+    this.accountService.logout();
+    this.toastr.success('Logout successfully');
+    this.model.username = "";
+    this.model.password = "";
+    
   }
 
 }

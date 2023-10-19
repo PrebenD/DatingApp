@@ -16,7 +16,7 @@ public static async Task SeedUsers(DataContext context)
 
             var options = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
 
-            var users = JsonSerializer.Deserialize<List<AppUser>>(userData);
+            var users = JsonSerializer.Deserialize<List<AppUser>>(userData, options);
 
             foreach (var user in users)
             {
