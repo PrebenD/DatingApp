@@ -19,6 +19,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     PaginationModule.forRoot(),
     ButtonsModule.forRoot(),
     TabsModule.forRoot(),
+    ModalModule.forRoot(),
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
     }),
@@ -27,10 +28,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     }),
     FileUploadModule,
     BsDatepickerModule.forRoot(),
-    TimeagoModule.forRoot(),
-    ButtonsModule.forRoot(),
-    TimeagoModule.forRoot(),
-    ModalModule.forRoot()
+    TimeagoModule.forRoot()
   ],
   exports: [
     BsDropdownModule,
@@ -40,8 +38,6 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     FileUploadModule,
     BsDatepickerModule,
     PaginationModule,
-    ButtonsModule,
-    TimeagoModule,
     ButtonsModule,
     TimeagoModule,
     ModalModule

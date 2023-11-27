@@ -35,10 +35,7 @@ public class Seed
             user.UserName = user.UserName.ToLower();
 
             await userManager.CreateAsync(user, "Pa$$w0rd");
-            if(user.UserName == "lisa")
-                await userManager.AddToRolesAsync(user, new[] { "Admin", "Moderator", "Member" });
-            else
-                await userManager.AddToRoleAsync(user, "Member");
+            await userManager.AddToRoleAsync(user, "Member");
         }
 
         var admin = new AppUser
