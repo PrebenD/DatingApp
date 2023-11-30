@@ -11,8 +11,8 @@ primary_region = "ams"
 
 [env]
   ASPNETCORE_URLS="http://+:8080"
-  CloudinarySettings__CloudName=preben
-  CloudinarySettings__ApiKey=529391499744921
+  CloudinarySettings__CloudName="preben"
+  CloudinarySettings__ApiKey="529391499744921"
 
 [http_service]
   internal_port = 8080
