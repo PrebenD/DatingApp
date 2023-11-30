@@ -37,6 +37,10 @@ else
 
     connString = $"Server={updatedHost};Port={pgPort};User Id={pgUser};Password={pgPass};Database={pgDb};";
 }
+builder.Services.AddDbContext<DataContext>(opt =>
+{
+    opt.UseNpgsql(connString);
+});
 
 var app = builder.Build();
 
